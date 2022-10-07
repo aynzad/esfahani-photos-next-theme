@@ -10,6 +10,8 @@
 
 The esfahani.photo is a multilingual fully customizable NextJs theme which aims to modernize, organize and enhance some aspects of a personal portfolio theme for photographers
 
+▶️ Demo: [Open live demo](https://esfahani-photos-next-theme.vercel.app/)
+
 &nbsp;
 
 ## 🧞‍♂️ Technologies & Features
