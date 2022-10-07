@@ -1,8 +1,7 @@
 import { getRepositoryName } from '@prismicio/client'
 import { PrismicNextImageProps } from '@prismicio/next'
-import sm from '../sm.json'
 
-export const apiEndpoint = process.env.API_ENDPOINT || sm.apiEndpoint
+export const apiEndpoint = process.env.API_ENDPOINT || ''
 
 export const repositoryName = getRepositoryName(apiEndpoint)
 
