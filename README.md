@@ -51,9 +51,10 @@ When you're ready to start your project, run the following command:
 npm run dev
 ```
 
-## ☑️ TO DO
+## ☑️ TODO
 
 - Writing tests
+- SEO
 
 ## 📝 License
 
