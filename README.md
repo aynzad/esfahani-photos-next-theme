@@ -16,11 +16,12 @@ The esfahani.photo is a multilingual fully customizable NextJs theme which aims 
 
 ## 🧞‍♂️ Technologies & Features
 
-- NextJs 12 with Static Generation (SSG)
+- NextJs 12 with Static Generation (SSG) and (SSI)
 - Prismic.io as the headless CMS
 - Fully Customizable with Tailwind css
-- Image blurring using plaiceholder package
+- Image blurring using the plaiceholder package
 - Multilingual support
+- Full Responsive
 - Typescript
 - ...
 
