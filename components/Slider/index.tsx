@@ -34,7 +34,6 @@ const Slider = forwardRef<SliderRef, WithClassName<Props>>(
         created: () => setIsMounted(true),
         slideChanged(s) {
           const slideNumber = s.track.details.rel
-          console.log('slideChanged', { slideNumber })
           onChange && onChange(slideNumber)
         }
       }),
