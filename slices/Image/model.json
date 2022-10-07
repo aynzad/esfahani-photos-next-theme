@@ -1,0 +1,140 @@
+{
+  "id": "image",
+  "type": "SharedSlice",
+  "name": "Image",
+  "description": "Image",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Image",
+      "primary": {
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {},
+            "thumbnails": [
+              {
+                "name": "thumb",
+                "width": 900,
+                "height": null
+              },
+              {
+                "name": "medium",
+                "width": 1400,
+                "height": null
+              },
+              {
+                "name": "large",
+                "width": 2000,
+                "height": null
+              },
+              {
+                "name": "square",
+                "width": 900,
+                "height": 900
+              }
+            ]
+          }
+        },
+        "caption": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Caption",
+            "placeholder": "Optional - Caption under the image",
+            "allowTargetBlank": true,
+            "single": "paragraph,em,strong"
+          }
+        },
+        "className": {
+          "type": "Text",
+          "config": {
+            "label": "Class Name",
+            "placeholder": "the tailwind css class name"
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    },
+    {
+      "id": "wide",
+      "name": "Wide",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Image",
+      "primary": {
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "caption": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Caption",
+            "placeholder": "Optional - Caption under the image",
+            "allowTargetBlank": true,
+            "single": "paragraph,em,strong"
+          }
+        },
+        "className": {
+          "type": "Text",
+          "config": {
+            "label": "Class Name",
+            "placeholder": "the tailwind css class name"
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    },
+    {
+      "id": "round",
+      "name": "Round",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Image",
+      "primary": {
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {},
+            "thumbnails": [
+              {
+                "name": "thumb",
+                "width": 500,
+                "height": 500
+              }
+            ]
+          }
+        },
+        "caption": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Caption",
+            "placeholder": "Optional - Caption under the image",
+            "allowTargetBlank": true,
+            "single": "paragraph,em,strong"
+          }
+        },
+        "className": {
+          "type": "Text",
+          "config": {
+            "label": "Class Name",
+            "placeholder": "the tailwind css class name"
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

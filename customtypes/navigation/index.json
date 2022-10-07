@@ -1,0 +1,54 @@
+{
+  "id": "navigation",
+  "label": "Navigation",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "logoTitle": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Logo Title",
+          "placeholder": "Title of the logo (eg: your name)",
+          "allowTargetBlank": true,
+          "single": "heading1"
+        }
+      },
+      "logoSubtitle": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Logo Subtitle",
+          "placeholder": "Logo description (eg: Photos by)",
+          "allowTargetBlank": true,
+          "single": "paragraph"
+        }
+      },
+      "links": {
+        "type": "Group",
+        "config": {
+          "label": "Links",
+          "fields": {
+            "label": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Label",
+                "placeholder": "Label for the link",
+                "allowTargetBlank": false,
+                "single": "heading3"
+              }
+            },
+            "link": {
+              "type": "Link",
+              "config": {
+                "label": "Link",
+                "placeholder": "Link for navigation item",
+                "allowTargetBlank": false,
+                "select": null
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

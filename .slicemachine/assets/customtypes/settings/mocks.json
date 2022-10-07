@@ -1,0 +1,175 @@
+{
+  "id": "mock-doc-id",
+  "url": null,
+  "type": "settings",
+  "href": null,
+  "tags": [],
+  "first_publication_date": "1970-01-01T00:00:01+0000",
+  "last_publication_date": "1970-01-01T00:00:01+0000",
+  "slugs": [],
+  "linked_documents": [],
+  "lang": "en-us",
+  "alternate_languages": [],
+  "data": {
+    "name": [
+      {
+        "type": "heading1",
+        "text": "Giving",
+        "spans": []
+      }
+    ],
+    "description": [
+      {
+        "type": "paragraph",
+        "text": "In exercitation sunt quis mollit adipisicing quis culpa adipisicing ipsum magna sint adipisicing. Quis id mollit ea qui excepteur adipisicing velit officia nulla excepteur.",
+        "spans": []
+      }
+    ],
+    "profileTitle": [
+      {
+        "type": "heading2",
+        "text": "Grown",
+        "spans": []
+      }
+    ],
+    "profilePicture": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": null,
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1600861194802-a2b11076bc51",
+      "thumb": {
+        "dimensions": {
+          "width": 900,
+          "height": 500
+        },
+        "alt": null,
+        "copyright": null,
+        "url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2"
+      },
+      "square": {
+        "dimensions": {
+          "width": 900,
+          "height": 900
+        },
+        "alt": null,
+        "copyright": null,
+        "url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2"
+      }
+    },
+    "profileSummery": [
+      {
+        "type": "paragraph",
+        "text": "Cillum id aute fugiat ea irure laborum eu consectetur eu laboris minim proident culpa ipsum laborum.",
+        "spans": []
+      }
+    ],
+    "profileCTA": [
+      {
+        "type": "paragraph",
+        "text": "Ut laborum tempor non ad officia ex ullamco esse ut occaecat velit. Voluptate ea veniam voluptate cillum cillum non pariatur culpa.",
+        "spans": []
+      }
+    ],
+    "tags": [
+      {
+        "image": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": null,
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04",
+          "thumb": {
+            "dimensions": {
+              "width": 900,
+              "height": 500
+            },
+            "alt": null,
+            "copyright": null,
+            "url": "https://images.unsplash.com/photo-1493119508027-2b584f234d6c"
+          },
+          "square": {
+            "dimensions": {
+              "width": 900,
+              "height": 900
+            },
+            "alt": null,
+            "copyright": null,
+            "url": "https://images.unsplash.com/photo-1589321578146-4c1ba445cc88"
+          }
+        },
+        "name": "practical",
+        "link": {
+          "link_type": "Web",
+          "url": "http://twitter.com"
+        }
+      }
+    ],
+    "contactBoxTitle": [
+      {
+        "type": "heading3",
+        "text": "Excitement",
+        "spans": []
+      }
+    ],
+    "contactBoxSubtitle": [
+      {
+        "type": "heading4",
+        "text": "Route",
+        "spans": []
+      }
+    ],
+    "contactBoxCTA": [
+      {
+        "type": "paragraph",
+        "text": "Tempor fugiat minim incididunt aute culpa excepteur eu velit consectetur elit quis ullamco. Laboris anim duis est ullamco duis irure reprehenderit.",
+        "spans": []
+      }
+    ],
+    "contactBoxImages": [
+      {
+        "image": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": null,
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1499781350541-7783f6c6a0c8",
+          "thumb": {
+            "dimensions": {
+              "width": 900,
+              "height": 500
+            },
+            "alt": null,
+            "copyright": null,
+            "url": "https://images.unsplash.com/photo-1531771686035-25f47595c87a"
+          },
+          "square": {
+            "dimensions": {
+              "width": 900,
+              "height": 900
+            },
+            "alt": null,
+            "copyright": null,
+            "url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1"
+          }
+        }
+      }
+    ],
+    "copyright": [
+      {
+        "type": "paragraph",
+        "text": "Dolore adipisicing aliquip sit sit fugiat in ut cupidatat laboris ut duis deserunt. Ullamco labore adipisicing sunt consectetur ullamco. Eu reprehenderit officia quis nostrud sit.",
+        "spans": []
+      }
+    ],
+    "seeCollection": "see collection →",
+    "seeAllCollection": "so",
+    "slices": []
+  }
+}

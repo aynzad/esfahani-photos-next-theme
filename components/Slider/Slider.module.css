@@ -1,0 +1,13 @@
+.root {
+  @apply relative w-full select-none;
+  overflow: hidden;
+}
+
+.slider {
+  @apply relative h-full transition-opacity duration-150;
+  opacity: 0;
+}
+
+.slider.show {
+  opacity: 1;
+}

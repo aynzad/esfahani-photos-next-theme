@@ -1,0 +1,55 @@
+@tailwind components;
+
+@layer components {
+  .header {
+    @apply fixed top-0 left-0 z-40 w-full translate-y-0 bg-white drop-shadow-sm transition-transform duration-300 will-change-transform sm:bg-white/90 sm:drop-shadow-none sm:backdrop-blur-md;
+  }
+
+  .header__hero {
+    @apply sm:translate-y-[30vh];
+  }
+
+  .main {
+    @apply container mb-20 min-h-[calc(100vh-12.5rem)] transform-none transition-transform duration-300 sm:mt-8 sm:min-h-[calc(100vh-16rem)];
+  }
+
+  .main__hero {
+    @apply sm:translate-y-[45vh];
+  }
+
+  .scrollIcon {
+    @apply relative top-2 hidden h-16 w-16 rounded-full border pt-2 text-center text-xl text-gray-600 transition-transform duration-300 will-change-transform;
+  }
+
+  .scrollIcon__hero {
+    @apply animate-bounce sm:inline-block;
+  }
+
+  .description {
+    @apply translate-y-3 scale-75 whitespace-nowrap text-center text-xs font-light tracking-widest transition-transform duration-300 will-change-transform sm:text-lg;
+  }
+
+  .description__hero {
+    @apply sm:translate-y-0 sm:scale-100;
+  }
+
+  .title {
+    @apply scale-50 whitespace-nowrap pb-2 text-center text-3xl font-medium tracking-widest text-primary transition-transform duration-300 will-change-transform sm:pb-0 sm:text-5xl;
+  }
+
+  .title__hero {
+    @apply sm:scale-100;
+  }
+
+  .menuList {
+    @apply hidden -translate-y-10 scale-50 gap-0 text-2xl transition-transform duration-300 will-change-transform sm:flex sm:gap-0 md:gap-1 lg:gap-20 lg:text-3xl xl:gap-56;
+  }
+
+  .menuList__hero {
+    @apply sm:translate-y-24 sm:scale-[0.60];
+  }
+
+  .menuItem {
+    @apply min-w-[150px] text-center font-normal tracking-tight text-slate-800;
+  }
+}

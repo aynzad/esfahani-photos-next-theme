@@ -1,0 +1,94 @@
+{
+  "id": "collection",
+  "label": "Collection",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "UID",
+          "placeholder": "URL slug for the collection"
+        }
+      },
+      "title": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Title",
+          "placeholder": "Title of the collection",
+          "allowTargetBlank": false,
+          "single": "heading1"
+        }
+      },
+      "featuredImage": {
+        "type": "Image",
+        "config": {
+          "label": "Featured Image",
+          "constraint": {
+            "width": null,
+            "height": null
+          },
+          "thumbnails": [
+            {
+              "name": "thumb",
+              "width": 900,
+              "height": 900
+            },
+            {
+              "name": "long",
+              "width": 900,
+              "height": 1200
+            }
+          ]
+        }
+      },
+      "gallery": {
+        "type": "Group",
+        "config": {
+          "label": "Gallery",
+          "fields": {
+            "image": {
+              "type": "Image",
+              "config": {
+                "label": "Image",
+                "constraint": {},
+                "thumbnails": [
+                  {
+                    "name": "thumb",
+                    "width": 900,
+                    "height": null
+                  },
+                  {
+                    "name": "medium",
+                    "width": 1400,
+                    "height": null
+                  },
+                  {
+                    "name": "large",
+                    "width": 2000,
+                    "height": null
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "quote": {
+              "type": "SharedSlice"
+            },
+            "text": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    }
+  }
+}

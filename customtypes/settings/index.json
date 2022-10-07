@@ -1,0 +1,204 @@
+{
+  "id": "settings",
+  "label": "Settings",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "name": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Name",
+          "placeholder": "Name of your site (e.g. your name)",
+          "allowTargetBlank": false,
+          "single": "heading1"
+        }
+      },
+      "description": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Description",
+          "placeholder": "Short description of your site",
+          "allowTargetBlank": false,
+          "single": "paragraph"
+        }
+      },
+      "profileTitle": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Profile Title",
+          "placeholder": "a title above the summery",
+          "allowTargetBlank": false,
+          "single": "heading2"
+        }
+      },
+      "profilePicture": {
+        "type": "Image",
+        "config": {
+          "label": "Profile Picture",
+          "constraint": {
+            "width": null,
+            "height": null
+          },
+          "thumbnails": [
+            {
+              "name": "thumb",
+              "width": 900,
+              "height": null
+            },
+            {
+              "name": "square",
+              "width": 900,
+              "height": 900
+            }
+          ]
+        }
+      },
+      "profileSummery": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Profile Summery",
+          "placeholder": "a short summery about yourself",
+          "allowTargetBlank": true,
+          "single": "paragraph,strong,em,hyperlink,list-item,o-list-item,rtl"
+        }
+      },
+      "profileCTA": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Profile CTA",
+          "placeholder": "A call to action link after summery",
+          "allowTargetBlank": true,
+          "single": "hyperlink"
+        }
+      },
+      "tags": {
+        "type": "Group",
+        "config": {
+          "label": "Tags",
+          "fields": {
+            "image": {
+              "type": "Image",
+              "config": {
+                "label": "Image",
+                "constraint": {},
+                "thumbnails": [
+                  {
+                    "name": "thumb",
+                    "width": 900,
+                    "height": null
+                  },
+                  {
+                    "name": "square",
+                    "width": 900,
+                    "height": 900
+                  }
+                ]
+              }
+            },
+            "name": {
+              "type": "Text",
+              "config": {
+                "label": "Name",
+                "placeholder": "Optional"
+              }
+            },
+            "link": {
+              "type": "Link",
+              "config": {
+                "label": "Link",
+                "placeholder": "Optional",
+                "allowTargetBlank": true,
+                "select": null
+              }
+            }
+          }
+        }
+      },
+      "contactBoxTitle": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Contact Box Title",
+          "placeholder": "A title for contact box section",
+          "allowTargetBlank": true,
+          "single": "heading3"
+        }
+      },
+      "contactBoxSubtitle": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Contact Box Subtitle",
+          "placeholder": "The contact box section's subtitle",
+          "allowTargetBlank": true,
+          "single": "heading4"
+        }
+      },
+      "contactBoxCTA": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Contact Box CTA",
+          "placeholder": "contact box call to action",
+          "allowTargetBlank": true,
+          "single": "paragraph,hyperlink"
+        }
+      },
+      "contactBoxImages": {
+        "type": "Group",
+        "config": {
+          "label": "Contact Box Images",
+          "fields": {
+            "image": {
+              "type": "Image",
+              "config": {
+                "label": "Image",
+                "constraint": {},
+                "thumbnails": [
+                  {
+                    "name": "thumb",
+                    "width": 900,
+                    "height": null
+                  },
+                  {
+                    "name": "square",
+                    "width": 900,
+                    "height": 900
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "copyright": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Copyright",
+          "placeholder": "Copyright text in footer",
+          "allowTargetBlank": true,
+          "single": "paragraph,strong,em,hyperlink,rtl"
+        }
+      },
+      "seeCollection": {
+        "type": "Text",
+        "config": {
+          "label": "See Collection",
+          "placeholder": "See collection text"
+        }
+      },
+      "seeAllCollection": {
+        "type": "Text",
+        "config": {
+          "label": "See All Collections",
+          "placeholder": "See all collection text"
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {}
+        }
+      }
+    }
+  }
+}

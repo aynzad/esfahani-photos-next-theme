@@ -1,0 +1,48 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
+    "prettier",
+    "plugin:import/errors",
+    "plugin:import/warnings"
+  ],
+  "plugins": ["@typescript-eslint", "prettier", "import"],
+  "rules": {
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": "error",
+    "import/order": [
+      "error",
+      {
+        "newlines-between": "never",
+        "alphabetize": {
+          "order": "asc" /* sort in ascending order */,
+          "caseInsensitive": true /* ignore case */
+        },
+        // We want to import react before the other externals
+        "pathGroups": [
+          {
+            "pattern": "react",
+            "group": "builtin",
+            "position": "before"
+          },
+          {
+            "pattern": "next/*",
+            "group": "builtin",
+            "position": "after"
+          }
+        ],
+        "pathGroupsExcludedImportTypes": ["internal"],
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index"
+        ]
+      }
+    ]
+  },
+  "ignorePatterns": ["types/customtypes.ts"]
+}

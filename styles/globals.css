@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html[lang^='fa'],
+html[lang^='ar'],
+html[lang^='he'] {
+  direction: rtl;
+}
+
+html[lang^='fa'] *,
+html[lang^='ar'] * {
+  letter-spacing: 0;
+}
+
+@layer base {
+  h1 {
+    @apply text-4xl text-text;
+  }
+  h2 {
+    @apply text-3xl text-text;
+  }
+  h3 {
+    @apply text-2xl text-text;
+  }
+  h4 {
+    @apply text-lg text-text;
+  }
+  h5 {
+    @apply text-base text-text;
+  }
+  h6 {
+    @apply text-sm text-text;
+  }
+  p {
+    @apply text-text;
+  }
+  a {
+    @apply underline decoration-transparent underline-offset-4 transition duration-300 ease-in-out hover:decoration-gray-500;
+  }
+  p > a {
+    @apply text-primary decoration-gray-300;
+  }
+}
+
+@layer utilities {
+  .ltr {
+    direction: ltr;
+  }
+  .rtl {
+    direction: rtl;
+  }
+  .tracking-extra {
+    letter-spacing: 0.3em;
+  }
+  .orientation-sideways {
+    text-orientation: sideways;
+  }
+  .orientation-upright {
+    text-orientation: upright;
+  }
+  .orientation-mixed {
+    text-orientation: mixed;
+  }
+  .orientation-sideways-right {
+    text-orientation: sideways-right;
+  }
+  .orientation-glyph {
+    text-orientation: use-glyph-orientation;
+  }
+  .vertical-writing-lr {
+    writing-mode: vertical-lr;
+  }
+  .vertical-writing-rl {
+    writing-mode: vertical-rl;
+  }
+  .horizontal-writing-tb {
+    writing-mode: horizontal-tb;
+  }
+}

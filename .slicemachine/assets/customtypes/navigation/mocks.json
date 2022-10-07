@@ -1,0 +1,44 @@
+{
+  "id": "mock-doc-id",
+  "url": null,
+  "type": "navigation",
+  "href": null,
+  "tags": [],
+  "first_publication_date": "1970-01-01T00:00:01+0000",
+  "last_publication_date": "1970-01-01T00:00:01+0000",
+  "slugs": [],
+  "linked_documents": [],
+  "lang": "en-us",
+  "alternate_languages": [],
+  "data": {
+    "logoTitle": [
+      {
+        "type": "heading1",
+        "text": "Ocean",
+        "spans": []
+      }
+    ],
+    "logoSubtitle": [
+      {
+        "type": "paragraph",
+        "text": "Ad in nostrud excepteur et excepteur non quis amet laborum magna deserunt fugiat mollit ut. Pariatur Lorem sit est tempor elit excepteur id occaecat.",
+        "spans": []
+      }
+    ],
+    "links": [
+      {
+        "label": [
+          {
+            "type": "heading3",
+            "text": "Quickly",
+            "spans": []
+          }
+        ],
+        "link": {
+          "link_type": "Web",
+          "url": "http://twitter.com"
+        }
+      }
+    ]
+  }
+}

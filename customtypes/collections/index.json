@@ -1,0 +1,28 @@
+{
+  "id": "collections",
+  "label": "Collections",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "title": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Title",
+          "placeholder": "Title of collections page",
+          "allowTargetBlank": false,
+          "single": "heading1"
+        }
+      },
+      "subtitle": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Subtitle",
+          "placeholder": "Subtitle in every collection's page",
+          "allowTargetBlank": false,
+          "single": "heading2"
+        }
+      }
+    }
+  }
+}
