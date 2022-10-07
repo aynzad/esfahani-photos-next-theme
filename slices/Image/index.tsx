@@ -1,7 +1,7 @@
 import { isFilled } from '@prismicio/helpers'
-import { PrismicNextImage } from '@prismicio/next'
 import { PrismicRichText } from '@prismicio/react'
 import clsx from 'clsx'
+import { PrismicNextImage } from '@app/components/Prismic'
 import { ImageSlice } from '@app/types/custom-types'
 
 interface Props {

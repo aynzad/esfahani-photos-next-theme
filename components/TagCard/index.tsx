@@ -1,6 +1,6 @@
 import { memo } from 'react'
-import { PrismicNextImage } from '@prismicio/next'
 import clsx from 'clsx'
+import { PrismicNextImage } from '@app/components/Prismic'
 import { setImageBlurData } from '@app/helpers/set-image-blur-data'
 import { SettingsDocumentDataTagsItem } from '@app/types/custom-types'
 import { TagCardWrapper } from './TagCardWrapper'

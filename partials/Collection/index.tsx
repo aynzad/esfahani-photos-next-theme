@@ -1,9 +1,9 @@
 import { useRef, useState, useCallback } from 'react'
 import { asText } from '@prismicio/helpers'
-import { PrismicNextImage } from '@prismicio/next'
 import { PrismicText, SliceZone } from '@prismicio/react'
 import Layout, { ILayoutConfig } from '@app/components/Layout'
 import { PageTitle } from '@app/components/PageTitle'
+import { PrismicNextImage } from '@app/components/Prismic'
 import Slider, { SliderRef } from '@app/components/Slider'
 import { imgixWatermarkParams } from '@app/helpers/configs'
 import { setImageBlurData } from '@app/helpers/set-image-blur-data'
@@ -116,6 +116,7 @@ export const Collection: React.FC<Props> = ({
                   className="select-none"
                   field={image.image.large}
                   imgixParams={imgixWatermarkParams}
+                  quality={100}
                   {...setImageBlurData(image.image.large, imagesBlurData)}
                 />
               </div>

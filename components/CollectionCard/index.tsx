@@ -1,9 +1,9 @@
 import { memo } from 'react'
 import Link from 'next/link'
 import router from 'next/router'
-import { PrismicNextImage } from '@prismicio/next'
 import { PrismicText } from '@prismicio/react'
 import clsx from 'clsx'
+import { PrismicNextImage } from '@app/components/Prismic'
 import { setImageBlurData } from '@app/helpers/set-image-blur-data'
 import { CollectionDocument } from '@app/types/custom-types'
 
