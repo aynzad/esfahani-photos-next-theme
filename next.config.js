@@ -8,7 +8,7 @@ const nextConfig = async () => {
   let locales = ['en-us']
 
   try {
-    const client = prismic.createClient(process.env.API_ENDPOINT, {
+    const client = prismic.createClient(process.env.NEXT_PUBLIC_API_ENDPOINT, {
       fetch
     })
     const repository = await client.getRepository()
@@ -32,7 +32,7 @@ const nextConfig = async () => {
         {
           source: '/admin',
           destination: `https://${prismic.getRepositoryName(
-            process.env.API_ENDPOINT
+            process.env.NEXT_PUBLIC_API_ENDPOINT
           )}.prismic.io`,
           permanent: true
         }
