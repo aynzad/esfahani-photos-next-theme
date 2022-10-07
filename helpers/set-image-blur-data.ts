@@ -7,7 +7,7 @@ import { defaultImageBlurData } from '@app/helpers/configs'
 
 export function setImageBlurData(
   image: EmptyImageFieldImage | FilledImageFieldImage,
-  imagesBlurData?: ImagesBlurData
+  imagesBlurData: Nullable<ImagesBlurData>
 ): Pick<ImageProps, 'placeholder' | 'blurDataURL'> {
   const hasBlurData = imagesBlurData && image.url && imagesBlurData[image.url]
   return {
