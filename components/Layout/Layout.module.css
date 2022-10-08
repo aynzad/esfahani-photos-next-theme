@@ -52,4 +52,12 @@
   .menuItem {
     @apply min-w-[150px] text-center font-normal tracking-tight text-slate-800;
   }
+
+  .menuItemMobile {
+    @apply h-20;
+  }
+
+  .menuItemMobile a {
+    @apply inline-block h-full w-full pt-5 text-center;
+  }
 }

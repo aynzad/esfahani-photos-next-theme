@@ -23,43 +23,46 @@ const LayoutHeaderMobileNav: React.FC<
 
   return (
     <>
-      <div className={clsx(className, 'absolute top-4 left-0 flex  sm:hidden')}>
+      <div className={clsx(className, 'absolute top-5 left-0 flex sm:hidden')}>
         <button
           type="button"
           onClick={toggleOpen}
-          className="cursor-pointer space-y-2"
+          className="cursor-pointer space-y-1.5"
         >
           <span
             className={clsx(
-              'block h-0.5 w-8 bg-gray-700 transition-transform',
-              isOpen && '-translate-x-5'
+              'block h-0.5 w-7 bg-gray-700 transition-transform',
+              isOpen && '-translate-x-3'
             )}
           ></span>
           <span
             className={clsx(
-              'block h-0.5 w-8 -translate-x-3 bg-gray-700 transition-transform',
-              isOpen && '-translate-x-5'
+              'block h-0.5 w-7 -translate-x-3 bg-gray-700 transition-transform',
+              isOpen && '-translate-x-1'
             )}
           ></span>
           <span
             className={clsx(
-              'block h-0.5 w-8 -translate-x-1 bg-gray-700 transition-transform',
-              isOpen && '-translate-x-5'
+              'block h-0.5 w-7 -translate-x-1 bg-gray-700 transition-transform',
+              isOpen && '-translate-x-4'
             )}
           ></span>
         </button>
       </div>
 
       <nav className={clsx({ hidden: !isOpen })}>
-        <ul className="container flex h-[calc(100vh-60px)] flex-col flex-nowrap justify-around">
+        <ul className="container flex h-[calc(100vh-60px)] flex-col flex-nowrap gap-8 overflow-hidden pt-6">
           {navigation.data?.links.map(item => (
-            <li key={asText(item.label)} className={classes.menuItem}>
+            <li
+              key={asText(item.label)}
+              className={clsx(classes.menuItem, classes.menuItemMobile)}
+            >
               <PrismicLink field={item.link}>
                 <PrismicText field={item.label} />
               </PrismicLink>
             </li>
           ))}
-          <li className={classes.menuItem}>
+          <li className={clsx(classes.menuItem, classes.menuItemMobile)}>
             <LayoutHeaderNavLang
               languages={languages}
               documentAlternateLanguages={documentAlternateLanguages}
