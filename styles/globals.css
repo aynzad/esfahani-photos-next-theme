@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  direction: ltr;
+}
+
 html[lang^='fa'],
 html[lang^='ar'],
 html[lang^='he'] {
