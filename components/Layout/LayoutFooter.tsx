@@ -17,8 +17,8 @@ const LayoutFooter: React.FC<Props> = memo(({ settings }) => {
   }).format(new Date())
 
   return (
-    <footer className="mt-10 mb-2">
-      <p className="text-center">
+    <footer className="mt-10 mb-8 px-2">
+      <p className="text-center text-xs md:text-base">
         &copy; {currentYear} <PrismicText field={settings.data.name} />
         {'. '}
         <PrismicText field={settings.data.copyright} />
