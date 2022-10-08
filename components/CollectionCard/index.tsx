@@ -40,7 +40,7 @@ export const CollectionCard: React.FC<
           <PrismicNextImage
             priority
             layout="responsive"
-            className="hover:invert hover:filter"
+            className="lg:hover:invert lg:hover:filter"
             field={collection.data.featuredImage[imageSize]}
             {...setImageBlurData(
               collection.data.featuredImage[imageSize],
@@ -49,7 +49,7 @@ export const CollectionCard: React.FC<
           />
         </div>
         {isFloatTitle && (
-          <h2 className="pointer-events-none fixed top-[50%] left-0 z-50 w-full -translate-y-1/2 select-none text-center text-5xl font-bold text-gray-500 opacity-0 mix-blend-difference group-hover:opacity-100 lg:text-6xl xl:text-8xl">
+          <h2 className="not-sr-only pointer-events-none top-[50%] left-0 z-50 hidden w-full -translate-y-1/2 select-none text-center text-5xl font-bold text-gray-500 opacity-0 mix-blend-difference group-hover:opacity-100 lg:fixed lg:text-6xl xl:text-8xl">
             <PrismicText field={collection.data.title} />
           </h2>
         )}

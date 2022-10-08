@@ -74,7 +74,7 @@ export const Collection: React.FC<Props> = ({
             >
               <PrismicNextImage
                 layout="responsive"
-                className="w-full hover:invert hover:filter"
+                className="w-full lg:hover:invert lg:hover:filter"
                 field={image.image.thumb}
                 {...setImageBlurData(image.image.thumb, imagesBlurData)}
               />
