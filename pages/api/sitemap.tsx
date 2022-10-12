@@ -18,8 +18,10 @@ function createSiteMapUrl(
             .map(img => {
               return `
     <image:image>
-      <image:loc>${asImageSrc(img.image.large, imgixWatermarkParams)}
-      </image:loc>
+      <image:loc><![CDATA[${asImageSrc(
+        img.image.large,
+        imgixWatermarkParams
+      )}]]></image:loc>
     </image:image>`
             })
             .join('')
