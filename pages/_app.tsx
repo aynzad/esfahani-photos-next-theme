@@ -19,6 +19,7 @@ export default function MyApp({ Component, pageProps, router }: AppWithLayout) {
   return (
     <>
       <Head>
+        <meta name="google" content="notranslate" />
         <link
           rel="sitemap"
           type="application/xml"
