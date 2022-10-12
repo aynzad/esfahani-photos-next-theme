@@ -57,32 +57,43 @@ export default async function handler(
   try {
     const client = createPrismicClient()
 
-    const settings = await client.getSingle('settings', {
+    const settingsData = await client.getSingle('settings', {
       lang: defaultLocale
     })
 
-    const collections = await client.getAllByType('collection', {
+    const collectionsData = await client.getSingle('collections', {
+      lang: defaultLocale
+    })
+
+    const collectionData = await client.getAllByType('collection', {
       lang: '*'
     })
-    const pages = await client.getAllByType('page', {
+    const pagesData = await client.getAllByType('page', {
       lang: '*'
     })
 
-    const lastBuildDate = collections.reduce((prev, cur) => {
+    const lastBuildDate = collectionData.reduce((prev, cur) => {
       return prev === '' || new Date(cur.last_publication_date) > new Date(prev)
         ? cur.last_publication_date
         : prev
     }, '')
 
     const homepageItems = createSiteMapUrl(
-      [settings],
+      [settingsData],
       '1.0',
       'weekly',
       lastBuildDate
     )
 
-    const collectionItems = createSiteMapUrl(collections, '0.8', 'yearly')
-    const pagesItems = createSiteMapUrl(pages, '0.5', 'yearly')
+    const collectionsItems = createSiteMapUrl(
+      [collectionsData],
+      '1.0',
+      'weekly',
+      lastBuildDate
+    )
+
+    const collectionItems = createSiteMapUrl(collectionData, '0.8', 'yearly')
+    const pagesItems = createSiteMapUrl(pagesData, '0.5', 'yearly')
 
     const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
     <urlset 
@@ -90,6 +101,7 @@ export default async function handler(
       xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
       xmlns:xhtml="http://www.w3.org/1999/xhtml">
       ${homepageItems.join('')}
+      ${collectionsItems.join('')}
       ${collectionItems.join('')}
       ${pagesItems.join('')}
     </urlset>`
