@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /sm
+
+User-agent: *
+Allow: /
