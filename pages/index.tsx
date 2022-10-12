@@ -1,5 +1,5 @@
 import { GetStaticProps } from 'next'
-import { pagesRevalidate } from '@app/helpers/configs'
+import { homepageCollectionsLimit, pagesRevalidate } from '@app/helpers/configs'
 import { createPrismicClient } from '@app/helpers/create-prismic-client'
 import { getImagesBlurData } from '@app/helpers/get-images-blur-data'
 import { getLayoutConfig } from '@app/helpers/get-layout-config'
@@ -15,9 +15,7 @@ export const getStaticProps: GetStaticProps<Props> = async ({
 }) => {
   const client = createPrismicClient({ previewData })
   const layoutConfig = await getLayoutConfig(client, locale)
-  const limit = process.env.HOMEPAGE_COLLECTIONS_LIMIT
-    ? +process.env.HOMEPAGE_COLLECTIONS_LIMIT
-    : undefined
+  const limit = homepageCollectionsLimit
   const collections = await client.getAllByType('collection', {
     limit,
     lang: locale

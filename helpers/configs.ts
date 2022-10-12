@@ -9,6 +9,10 @@ export const defaultLocale = process.env.DEFAULT_LOCALE || 'en-us'
 
 export const repositoryName = getRepositoryName(apiEndpoint)
 
+export const homepageCollectionsLimit = process.env.HOMEPAGE_COLLECTIONS_LIMIT
+  ? +process.env.HOMEPAGE_COLLECTIONS_LIMIT
+  : undefined
+
 export const pagesRevalidate = +(process.env.PAGES_REVALIDATE_S || '') || 60
 
 export const defaultImageBlurData =
