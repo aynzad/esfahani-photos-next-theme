@@ -27,6 +27,21 @@ const nextConfig = async () => {
         }
       ]
     },
+    rewrites: async () => [
+      {
+        source: '/sitemap.xml',
+        destination: '/api/sitemap'
+      },
+      {
+        source: '/rss.xml',
+        destination: '/api/rss/:locale',
+        has: [{ type: 'query', key: 'locale' }]
+      },
+      {
+        source: '/rss.xml',
+        destination: `/api/rss/${process.env.DEFAULT_LOCALE || locales[0]}`
+      }
+    ],
     redirects: async () => {
       return [
         {

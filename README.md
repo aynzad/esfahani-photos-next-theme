@@ -24,6 +24,7 @@ The esfahani.photo is a multilingual fully customizable NextJs theme which aims 
 - Image blurring using the plaiceholder package
 - Multilingual support
 - Full Responsive
+- RSS feed and Sitemap generator
 - Typescript
 - ...
 
@@ -58,10 +59,10 @@ npm run dev
 
 ## ☑️ TODO
 
+- [x] Sitemap
+- [x] RSS feed
 - [ ] Writing tests
 - [ ] SEO
-- [ ] Sitemap
-- [ ] RSS feed
 
 ## 📝 License
 

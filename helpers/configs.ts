@@ -3,6 +3,10 @@ import { PrismicNextImageProps } from '@prismicio/next'
 
 export const apiEndpoint = process.env.NEXT_PUBLIC_API_ENDPOINT || ''
 
+export const siteURL = process.env.SITE_URL || process.env.VERCEL_URL || '/'
+
+export const defaultLocale = process.env.DEFAULT_LOCALE || 'en-us'
+
 export const repositoryName = getRepositoryName(apiEndpoint)
 
 export const pagesRevalidate = +(process.env.PAGES_REVALIDATE_S || '') || 60
