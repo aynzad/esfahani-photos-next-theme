@@ -4,7 +4,7 @@ import { createPrismicClient } from '@app/helpers/create-prismic-client'
 import { getImagesBlurData } from '@app/helpers/get-images-blur-data'
 import { getLayoutConfig } from '@app/helpers/get-layout-config'
 import { Genre, getLayout, Props } from '@app/partials/Genre'
-import { CollectionDocument } from '@app/prismicio-types'
+import { CollectionDocument } from '@app/types/custom-types'
 
 const GenrePage: NextPageWithLayout<Props> = props => {
   return <Genre {...props} />

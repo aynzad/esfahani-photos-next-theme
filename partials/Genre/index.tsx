@@ -1,11 +1,10 @@
-import { CollectionDocument } from '@app/prismicio-types'
 import { asText } from '@prismicio/helpers'
 import { PrismicText, SliceZone } from '@prismicio/react'
 import { CollectionCard } from '@app/components/CollectionCard'
 import Layout, { ILayoutConfig } from '@app/components/Layout'
 import { PageTitle } from '@app/components/PageTitle'
 import { components } from '@app/slices'
-import { GenreDocument } from '@app/types/custom-types'
+import { GenreDocument, CollectionDocument } from '@app/types/custom-types'
 import classes from '../Home/home.module.css'
 
 interface GenreDocumentDataCollectionsItem {
