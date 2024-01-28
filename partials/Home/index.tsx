@@ -36,7 +36,7 @@ export const Home: React.FC<Props> = ({
             ))}
           </section>
           <Link href="/collections">
-            <a className="mt-6 block w-full text-center text-lg lg:mt-24">
+            <a className="mt-8 block w-full text-center text-lg lg:mt-32">
               {settings.data.seeAllCollection}
             </a>
           </Link>

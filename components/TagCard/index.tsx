@@ -36,14 +36,14 @@ export const TagCard: React.FC<WithClassName<WithImagesBlurData<Props>>> = memo(
               className={clsx(
                 'xl:tracking-extra absolute whitespace-nowrap font-light group-hover:text-gray-800 lg:tracking-wider',
                 index === 0 &&
-                  'left-[75%] top-[105%] text-left text-6xl text-gray-600',
+                  'left-[75%] top-[105%] text-left text-5xl text-gray-600',
                 index === 1 &&
-                  'orientation-mixed vertical-writing-lr right-[-30%] top-[15%] text-5xl text-gray-700',
+                  'orientation-mixed vertical-writing-lr right-[-30%] top-[15%] text-4xl text-gray-700',
                 index === 2 &&
-                  'right-[110%] top-[25%] text-right text-5xl text-gray-500',
-                index === 3 && 'top-[105%] left-1 text-6xl text-gray-600',
+                  'right-[110%] top-[25%] text-right text-4xl text-gray-500',
+                index === 3 && 'top-[105%] left-1 text-5xl text-gray-600',
                 index === 4 &&
-                  'orientation-mixed vertical-writing-lr left-[-35%] bottom-[5%] text-6xl text-gray-400'
+                  'orientation-mixed vertical-writing-lr left-[-35%] bottom-[5%] text-5xl text-gray-400'
               )}
             >
               {tag.name}
