@@ -14,6 +14,8 @@ export const linkResolver: LinkResolverFunction = doc => {
       return `/collections`
     case 'collection':
       return `/collections/${doc.uid}`
+    case 'genre':
+      return `/genres/${doc.uid}`
     case 'page':
       return `/${doc.uid}`
     default:

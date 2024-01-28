@@ -50,6 +50,7 @@
     "@commitlint/config-conventional": "^8.0.0",
     "@commitlint/prompt-cli": "^8.0.0",
     "@prismicio/types": "^0.2.3",
+    "@slicemachine/adapter-next": "^0.3.34",
     "@tailwindcss/aspect-ratio": "^0.4.0",
     "@tailwindcss/typography": "^0.5.7",
     "@testing-library/jest-dom": "5.16.4",
@@ -73,7 +74,7 @@
     "prettier": "^2.7.1",
     "prettier-plugin-tailwindcss": "^0.1.13",
     "prismic-ts-codegen": "^0.1.5",
-    "slice-machine-ui": "^0.5.0",
+    "slice-machine-ui": "^1.23.1",
     "tailwindcss": "^3.1.8",
     "typescript": "^4.8.4"
   },

@@ -1,0 +1,60 @@
+[
+  {
+    "logoTitle": {
+      "__TYPE__": "StructuredTextContent",
+      "value": [
+        {
+          "type": "heading1",
+          "content": {
+            "text": "Eight"
+          }
+        }
+      ]
+    },
+    "logoSubtitle": {
+      "__TYPE__": "StructuredTextContent",
+      "value": [
+        {
+          "type": "paragraph",
+          "content": {
+            "text": "Anim cillum non proident fugiat in quis veniam ea duis dolore proident laboris laboris quis pariatur."
+          }
+        }
+      ]
+    },
+    "links": {
+      "__TYPE__": "GroupContentType",
+      "value": [
+        {
+          "__TYPE__": "GroupItemContent",
+          "value": [
+            [
+              "label",
+              {
+                "__TYPE__": "StructuredTextContent",
+                "value": [
+                  {
+                    "type": "heading3",
+                    "content": {
+                      "text": "Sheet"
+                    }
+                  }
+                ]
+              }
+            ],
+            [
+              "link",
+              {
+                "__TYPE__": "LinkContent",
+                "value": {
+                  "__TYPE__": "ExternalLink",
+                  "url": "http://google.com"
+                }
+              }
+            ]
+          ]
+        }
+      ]
+    }
+  }
+]
