@@ -164,6 +164,17 @@ interface GenreDocumentData {
 	collections: prismic.GroupField<Simplify<GenreDocumentDataCollectionsItem>>;
 	
 	/**
+	 * Featured Image field in *Genre*
+	 *
+	 * - **Field Type**: Image
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: genre.featuredImage
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/field#image
+	 */
+	featuredImage: prismic.ImageField<"thumb" | "long">;
+	
+	/**
 	 * Slice Zone field in *Genre*
 	 *
 	 * - **Field Type**: Slice Zone
@@ -532,6 +543,30 @@ interface SettingsDocumentData {
 	 * - **Documentation**: https://prismic.io/docs/field#key-text
 	 */
 	seeAllCollection: prismic.KeyTextField;
+	
+	/**
+	 * Contact Section field in *Settings*
+	 *
+	 * - **Field Type**: Boolean
+	 * - **Placeholder**: *None*
+	 * - **Default Value**: true
+	 * - **API ID Path**: settings.isContactSectionEnabled
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/field#boolean
+	 */
+	isContactSectionEnabled: prismic.BooleanField;
+	
+	/**
+	 * Genre Section field in *Settings*
+	 *
+	 * - **Field Type**: Boolean
+	 * - **Placeholder**: *None*
+	 * - **Default Value**: true
+	 * - **API ID Path**: settings.isGenreSectionEnabled
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/field#boolean
+	 */
+	isGenreSectionEnabled: prismic.BooleanField;
 	
 	/**
 	 * Slice Zone field in *Settings*

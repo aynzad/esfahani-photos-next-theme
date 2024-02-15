@@ -21,8 +21,17 @@ export const getStaticProps: GetStaticProps<Props> = async ({
     lang: locale
   })
 
+  const genres = layoutConfig.settings.data.isGenreSectionEnabled
+    ? await client.getAllByType('genre', {
+        lang: locale
+      })
+    : []
+
   const collectionsImages = collections.map(
     collection => collection.data.featuredImage.long.url || ''
+  )
+  const genresImages = genres.map(
+    genre => genre.data.featuredImage.thumb.url || ''
   )
   const tagsImages = layoutConfig.settings.data.tags.map(
     tag => tag.image.square.url || ''
@@ -35,6 +44,7 @@ export const getStaticProps: GetStaticProps<Props> = async ({
   )
   const allImages = [
     ...collectionsImages,
+    ...genresImages,
     ...tagsImages,
     ...profileImages,
     ...contactBoxImages
@@ -45,6 +55,7 @@ export const getStaticProps: GetStaticProps<Props> = async ({
     props: {
       ...layoutConfig,
       collections,
+      genres,
       imagesBlurData
     },
     revalidate: pagesRevalidate

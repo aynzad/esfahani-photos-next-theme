@@ -38,6 +38,25 @@
           }
         }
       },
+      "featuredImage": {
+        "type": "Image",
+        "config": {
+          "label": "Featured Image",
+          "constraint": {},
+          "thumbnails": [
+            {
+              "name": "thumb",
+              "width": 900,
+              "height": 900
+            },
+            {
+              "name": "long",
+              "width": 900,
+              "height": 1200
+            }
+          ]
+        }
+      },
       "slices": {
         "type": "Slices",
         "fieldset": "Slice Zone",

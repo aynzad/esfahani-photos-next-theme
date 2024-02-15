@@ -3,25 +3,39 @@ import { isFilled } from '@prismicio/helpers'
 import { PrismicRichText, PrismicText } from '@prismicio/react'
 import { CollectionCard } from '@app/components/CollectionCard'
 import { ContactBox } from '@app/components/ContactBox'
+import { GenreCard } from '@app/components/GenreCard'
 import Layout, { ILayoutConfig } from '@app/components/Layout'
 import { PrismicNextImage } from '@app/components/Prismic'
 import { TagCard } from '@app/components/TagCard'
 import { setImageBlurData } from '@app/helpers/set-image-blur-data'
-import { CollectionDocument } from '@app/types/custom-types'
+import { CollectionDocument, GenreDocument } from '@app/types/custom-types'
 import classes from './home.module.css'
 
 export interface Props extends WithImagesBlurData<ILayoutConfig> {
   collections: CollectionDocument[]
+  genres: GenreDocument[]
 }
 
 export const Home: React.FC<Props> = ({
   collections,
+  genres,
   settings,
   imagesBlurData
 }) => {
   return (
     <div className="container px-4 sm:mt-32">
-      {collections.length && (
+      {settings.data.isGenreSectionEnabled && genres.length > 0 && (
+        <section className="mb-20 flex flex-col justify-center gap-5 sm:gap-16 md:mb-32 md:flex-row md:gap-20 lg:gap-40">
+          {genres.map(genre => (
+            <GenreCard
+              key={genre.id}
+              genre={genre}
+              imagesBlurData={imagesBlurData}
+            />
+          ))}
+        </section>
+      )}
+      {collections.length > 0 && (
         <>
           <section className={classes.collections}>
             {collections.map(collection => (
@@ -43,7 +57,7 @@ export const Home: React.FC<Props> = ({
         </>
       )}
 
-      {settings.data.tags.length && (
+      {settings.data.tags.length > 0 && (
         <section className="ltr mb-96 hidden grid-cols-2 gap-16 pb-28 pt-20 lg:grid">
           {settings.data.tags.map((tag, index) => (
             <TagCard
@@ -84,7 +98,9 @@ export const Home: React.FC<Props> = ({
         </section>
       )}
 
-      <ContactBox settings={settings} imagesBlurData={imagesBlurData} />
+      {settings.data.isContactSectionEnabled && (
+        <ContactBox settings={settings} imagesBlurData={imagesBlurData} />
+      )}
     </div>
   )
 }

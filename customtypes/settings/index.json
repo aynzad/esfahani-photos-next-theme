@@ -3,6 +3,7 @@
   "label": "Settings",
   "repeatable": false,
   "status": true,
+  "format": "custom",
   "json": {
     "Main": {
       "name": {
@@ -190,6 +191,24 @@
         "config": {
           "label": "See All Collections",
           "placeholder": "See all collection text"
+        }
+      },
+      "isContactSectionEnabled": {
+        "type": "Boolean",
+        "config": {
+          "label": "Contact Section",
+          "placeholder_false": "Hide",
+          "placeholder_true": "Show",
+          "default_value": true
+        }
+      },
+      "isGenreSectionEnabled": {
+        "type": "Boolean",
+        "config": {
+          "label": "Genre Section",
+          "placeholder_false": "Hide",
+          "placeholder_true": "Show",
+          "default_value": true
         }
       },
       "slices": {
