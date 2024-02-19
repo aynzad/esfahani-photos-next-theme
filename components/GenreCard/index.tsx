@@ -30,7 +30,7 @@ export const GenreCard: React.FC<WithClassName<WithImagesBlurData<Props>>> =
           className={clsx(
             className,
             isFloatTitle && 'group',
-            'mb-12 flex w-80 cursor-pointer flex-col md:mb-20'
+            'mb-12 flex w-full cursor-pointer flex-col sm:w-80 md:mb-20'
           )}
         >
           <div className="border border-gray-100">
