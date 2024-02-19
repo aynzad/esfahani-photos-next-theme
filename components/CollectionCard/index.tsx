@@ -40,7 +40,7 @@ export const CollectionCard: React.FC<
           <PrismicNextImage
             priority
             layout="responsive"
-            className="lg:hover:invert lg:hover:filter"
+            className="transition duration-700 ease-in-out lg:hover:grayscale lg:hover:filter"
             field={collection.data.featuredImage[imageSize]}
             {...setImageBlurData(
               collection.data.featuredImage[imageSize],
